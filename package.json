@@ -1,0 +1,19 @@
+{
+  "name": "eloy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-spec-reporter": "^4.0.0",
+    "node-uuid": "^1.4.8",
+    "shortid": "^2.2.8"
+  }
+}
