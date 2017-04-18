@@ -14,6 +14,7 @@
   "devDependencies": {
     "jasmine-spec-reporter": "^4.0.0",
     "node-uuid": "^1.4.8",
+    "protractor-jasmine2-html-reporter": "0.0.7",
     "shortid": "^2.2.8"
   }
 }
