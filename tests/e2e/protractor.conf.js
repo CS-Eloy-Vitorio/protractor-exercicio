@@ -1,6 +1,7 @@
  // protractor.conf.js
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter').Jasmine2HtmlReporter;
+let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+
 
 module.exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -22,10 +23,17 @@ module.exports.config = {
           }
         )
       );
+
+    jasmine
+      .getEnv()
+      .addReporter(
+        new Jasmine2HtmlReporter(
+          {
+            takeScreenshots: true,
+            fixedScreenshotName: true
+          }
+        )
+      );
     }
 
-    jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
-      takeScreenshots: true,
-      fixedScreenshotName: true
-    }));
 }

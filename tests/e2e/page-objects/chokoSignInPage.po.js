@@ -1,5 +1,5 @@
  // chokoSignInPage.po.js
- var Helper = require('/Users/eloyvitorio/Documents/Projeto-teste-protractor/tests/e2e/helper.js');
+ var Helper = require('../helper.js');
  var helper = new Helper();
 
  var ChokoSignInPage = function(){

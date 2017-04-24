@@ -1,0 +1,5 @@
+#Ignora arquivos ocultos de sistema, screenshots e relatórios de execução
+.DS_Store
+screenshots/*.png
+htmlReport.html
+*.log
